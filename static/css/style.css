@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(7, 7, 7);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.backvideo-block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.backvideo {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.backvideo-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.65);
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    color: white;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.content .subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@keyframes borderFlow {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.cta-btn:hover {
+    background: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    transform: translateY(-5px);
+}
+
+.cta-btn svg {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.4s ease;
+}
+
+.cta-btn:hover svg {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.what-do {
+    margin-top: 30px;
+}
+
+.what-do h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.what-do p {
+    font-size: 18px;
+}
+
+.what-do ul {
+    margin-top: 10px;
+}
+
+.what-do li {
+    margin-left: 30px;
+    margin-top: 2px;
+}
+
+.mission {
+    margin-top: 30px;
+}
+
+.mission h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mission p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
