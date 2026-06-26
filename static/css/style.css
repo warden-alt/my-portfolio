@@ -1,4 +1,5 @@
-* {
+*, *::after, *::before {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -76,9 +77,17 @@ header nav ul li a:hover {
     font-size: 50px;
 }
 
+.content h2 {
+    font-size: 30px;
+}
+
 .content .subtitle {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.content-text {
+    font-size: 18px;
 }
 
 .highlight {
@@ -103,20 +112,11 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-@keyframes borderFlow {
-    0% {
-        clip-path: inset(0 100% 0 0);
-    }
-    100% {
-        clip-path: inset(0 0 0 0);
-    }
-}
-
 .cta-btn:hover {
     background: transparent;
     border-bottom: 2px solid white;
     border-radius: 10px;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     transform: translateY(-5px);
 }
 
@@ -135,26 +135,12 @@ header nav ul li a:hover {
     margin-top: 50px;
 }
 
-.about h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.about p {
-    font-size: 18px;
-}
-
 .what-do {
     margin-top: 30px;
 }
 
 .what-do h2 {
-    font-size: 30px;
     margin-bottom: 10px;
-}
-
-.what-do p {
-    font-size: 18px;
 }
 
 .what-do ul {
